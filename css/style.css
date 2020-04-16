@@ -101,7 +101,7 @@ h1 {
   border-top: 10px solid rgba(255, 172, 65, 0.8);
   animation-name: spin;
   animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   transition: all 3s;
 }

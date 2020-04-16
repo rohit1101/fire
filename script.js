@@ -27,7 +27,7 @@ window.onload = () => {
   loader.style.display = 'block';
   setTimeout(() => {
     loader.style.display = 'none';
-  }, 1000);
+  }, 900);
 };
 
 function render() {
