@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1579909990663-0a8557ca9785?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -3;
+}
+
+.con {
+  padding: 1rem;
+}
+
+h1 {
+  font-family: 'Nova Cut', cursive;
+  font-size: 5rem;
+  margin: 0.5rem 0;
+  color: #ffac41;
+}
+
+.dis {
+  text-align: center;
+  font-size: 4rem;
+  padding: 2rem 0;
+  color: #b2ebf2;
+}
+
+.btn {
+  font-size: 1.5rem;
+  border: 0;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  background: #b2ebf2;
+  border-radius: 1px 1px 1px 1px black;
+}
+
+.inp {
+  width: 100%;
+  background: #202020;
+  outline: none;
+  padding: 0.5rem;
+  color: #ffac41;
+}
+
+.fa-trash-alt {
+  color: #fe4a49;
+  cursor: pointer;
+}
+
+.fa-edit {
+  color: #d1f5d3;
+  cursor: pointer;
+}
+
+.lii {
+  border: 2px solid #fad9c1;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+  color: #ffac41;
+  background: #1e1f26;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loader {
+  margin: 5rem auto;
+  width: 10rem;
+  height: 10rem;
+  border: 10px solid #b2ebf2;
+  border-top: 10px solid rgba(255, 172, 65, 0.8);
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  transition: all 3s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 25%;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  75% {
+    border-radius: 75%;
+  }
+  100% {
+    border-radius: 0%;
+    transform: rotate(360deg);
+  }
+}
