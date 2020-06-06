@@ -1,3 +1,3 @@
 # fire
 Reference Material:
-Dummy Project for learning Firebase Realtime DB 🔥
+Dummy Project for Firebase Realtime DB 🔥
